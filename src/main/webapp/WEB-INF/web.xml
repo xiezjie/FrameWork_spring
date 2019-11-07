@@ -1,0 +1,26 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+
+  <servlet>
+    <servlet-name>JasonMVC</servlet-name>
+    <servlet-class>io.spring.servlet.DispatchServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:application.properties</param-value>
+    </init-param>
+    <!--容器启动就开始加载-->
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>JasonMVC</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
